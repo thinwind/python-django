@@ -26,7 +26,7 @@ class QuestionModelTests(TestCase):
 
     def test_was_published_recently_with_recent_question(self):
         """
-        was_published_recently() returns True for questions whoes pub_date
+        was_published_recently() returns True for questions whose pub_date
         is within the last day
         """
         time = timezone.now() -datetime.timedelta(hours=23,minutes=59,seconds=59)
